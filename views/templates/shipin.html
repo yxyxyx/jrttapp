@@ -1,0 +1,38 @@
+<div id="shipin">
+    <div class="spt">
+        <ul>
+        	<li><a href="#" class="hong">推荐</a></li>
+        	<li><a href="#">逗比剧</a></li>
+        	<li><a href="#">音乐台</a></li>
+        	<li><a href="#">看天下</a></li>
+        	<li><a href="#">小品</a></li>
+        	<li><a href="#">萌萌哒</a></li>
+        	<li><a href="#">最娱乐</a></li>
+        	<li><a href="#">爱生活</a></li>
+        	<li><a href="#">妹子</a></li>
+        	<li><a href="#">掠影</a></li>
+        	<li><a href="#">开眼</a></li>
+        	<li><a href="#">原创精选</a></li>
+        </ul>
+    	<div class="serach"></div>
+    </div>
+    <div class="bao">
+      <div class="pin" ng-repeat="v in shilist">
+        <div class="pic"><img src="{{v.image}}"></div>
+        <div class="zi">
+            <div class="center">
+                <div class="sl">
+                    <span class="circle"><img src="{{v.tubiao}}"></span>
+                    <span class="zi">{{v.zi}}</span>
+                </div>
+                <div class="sr">
+                    <span>{{v.bo}}</span>
+                    <span id="zan">{{}}</span>
+                    <span id="dian">...</span>
+                </div>
+            </div>
+        </div>
+    </div>  
+    </div>
+			
+</div>

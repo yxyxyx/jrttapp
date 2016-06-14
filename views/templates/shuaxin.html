@@ -1,0 +1,55 @@
+<div id="shuaxin">
+        <div class="sxt">
+		 <ul>
+			 <li><a href="">推荐</a></li>
+			 <li><a href="">热点</a></li>
+			 <li><a href="">太原</a></li>
+			 <li><a href="">视频</a></li>
+			 <li><a href="">订阅</a></li>
+			 <li><a href="">图片</a></li>
+			 <li><a href="">娱乐</a></li>
+			 <li><a href="">科技</a></li>
+			 <li><a href="">汽车</a></li>
+			 <li><a href="">体育</a></li>
+			 <li><a href="">财经</a></li>
+			 <li><a href="">军事</a></li>
+			 <li><a href="">国际</a></li>
+			 <li><a href="">段子</a></li>
+			 <li><a href="">趣图</a></li>
+			 <li><a href="">美女</a></li>
+			 <li><a href="">正能量</a></li>
+			 <li><a href="">特卖</a></li>
+			 <li><a href="">房产</a></li>
+			 <li><a href="">欧洲杯</a></li>
+		 </ul>
+		 <div class="serach"><a href="#"></a></div>
+	    </div>
+	    <div class="bao">
+	    	<div class="updata">
+			  <div class="center">
+				<span class="tou">习近平提出培养中美两国共同“朋友圈”</span>
+				<span class="lie">
+					<span>头条</span>
+					<span>专题</span>
+					<span>5万评论</span>
+					<span>刚刚</span>
+					<span>置顶</span>
+					<span class="delete">x</span>
+				</span>
+			  </div>
+		    </div>
+		    <div class="new" ng-repeat="v in newlist">
+			<div class="center">
+				<div class="con">
+					<span class="dazi">{{v.dazi}}</span>
+					<span class="xiaozi">
+						<span>{{v.baose}}</span>
+						<span>{{v.pinglun}}</span>
+						<span id="rightx" ng-click="deletenew($index)">x</span>
+					</span>
+				</div>
+				<div class="pic"><img src="{{v.image}}"></div>
+			</div>
+		    </div>
+	    </div>			
+	</div>

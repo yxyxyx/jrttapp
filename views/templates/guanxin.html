@@ -1,0 +1,45 @@
+<div id="guanxin">
+    <div class="gxt">
+    	<a href="#" class="clock"></a>
+    	<span class="guan">关心</span>
+    	<a href="#" class="shou"></a>
+    </div>
+    <div class="bao">
+    	<div class="zhen">
+		<div class="zzgx">
+			<span id="tiao"></span>
+			<span class="xz">正在关心</span>
+		</div>
+		<div class="add" ng-if="xiaoshi">
+			<span class="kuang">+</span>
+			<span class="kz">尚无关心，从下面挑选几个关心吧！</span>
+		</div>
+		<div class="ren" ng-repeat="v in starlist" ng-if="!v.state">
+			<span class="ge"><img src="{{v.image}}"></span>
+			<div class="kz1">
+				<span class="rm">{{v.name}}</span>
+			</div>
+			<span class="gzz1">new</span>
+		</div>
+	</div>
+	<div class="jian"></div>
+	<div class="zhen">
+		<div class="zzgx">
+			<span id="tiao"></span>
+			<span class="xz">可能关心</span>
+		</div>
+		<div class="ren" ng-repeat="v in starlist" ng-if="v.state">
+			<span class="ge"><img src="{{v.image}}"></span>
+			<div class="kz">
+				<span class="rm">{{v.name}}</span>
+				<span class="xx">
+					<span>{{v.love}}</span>
+					<span>{{v.lun}}</span>
+				</span>
+			</div>
+			<span ng-click="guanxin(v)" class="gzz">关心</span>
+		</div>
+	</div>
+    </div>
+	
+</div>

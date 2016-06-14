@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jrttnew">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>今日头条</title>
+<link rel="stylesheet" href="./css/index.css">
+<script src="./js/angular.js"></script>
+<script src="./js/angular-touch.js"></script>
+<script src="./js/angular-route.js"></script>
+<script src="./js/angular-animate.js"></script>
+</head>
+<body ng-controller="indexCtrl">
+<tt-header></tt-header>
+<div id="zhong">
+<ng-view></ng-view>
+</div>
+<tt-footer></tt-footer>
+<script src="./js/index.js"></script>
+</body>
+</html>
